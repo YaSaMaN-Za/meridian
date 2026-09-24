@@ -821,3 +821,143 @@
   padding-top: 1.125rem;
   margin-top: 1.125rem;
 }
+
+.stepper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.step__bar {
+  height: 3px;
+  border-radius: 2px;
+  background: var(--surface-3);
+}
+
+.step__label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--fs-xs);
+  color: var(--muted);
+}
+
+.step__num {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--surface-3);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+}
+
+.step.is-active .step__bar {
+  background: var(--primary);
+}
+
+.step.is-active .step__num {
+  background: var(--primary);
+  color: #fff;
+}
+
+.step.is-active .step__label {
+  color: var(--text);
+  font-weight: 650;
+}
+
+.step.is-done .step__bar {
+  background: var(--success);
+}
+
+.step.is-done .step__num {
+  background: var(--success);
+  color: #fff;
+}
+
+.step.is-done .step__num::before {
+  content: "\F26E";
+  font-family: "bootstrap-icons";
+  font-size: 0.75rem;
+}
+
+.step.is-done .step__num span {
+  display: none;
+}
+
+.step-panel {
+  display: none;
+}
+
+.step-panel.is-active {
+  display: block;
+}
+
+.choice-card {
+  display: flex;
+  gap: 0.875rem;
+  align-items: flex-start;
+  padding: 1.0625rem 1.125rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  cursor: pointer;
+  transition:
+    border-color var(--dur-fast) var(--ease),
+    background-color var(--dur-fast) var(--ease);
+}
+
+.choice-card:hover {
+  border-color: var(--text);
+}
+
+.choice-card:has(input:checked) {
+  border-color: var(--primary);
+  background: var(--primary-wash);
+}
+
+.choice-card:has(input:focus-visible) {
+  box-shadow: var(--ring);
+}
+
+.choice-card__title {
+  font-size: var(--fs-sm);
+  font-weight: 650;
+}
+
+.choice-card__meta {
+  font-size: var(--fs-xs);
+  color: var(--muted);
+}
+
+.pay-panel {
+  display: none;
+  padding-top: 1.125rem;
+}
+
+.pay-panel.is-active {
+  display: block;
+}
+
+.confirm-mark {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: var(--success-wash);
+  color: var(--success);
+  display: inline-grid;
+  place-items: center;
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
