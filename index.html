@@ -1,1157 +1,988 @@
 <!doctype html>
 <html lang="en" class="no-js" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meridian | Everything you love, one place</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meridian | Everything you love, one place</title>
 
-    <link
-      rel="shortcut icon"
-      href="./assets/images/favicon.svg"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/sections.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
-  </head>
+        <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon" />
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/sections.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+    </head>
 
-  <body class="">
-    <a href="#main" class="skip-link">Skip to main Content</a>
+    <body class="">
+        <a href="#main" class="skip-link">Skip to main Content</a>
 
-    <header class="site-header">
-      <div class="announce">
-        <div
-          class="container d-flex align-items-center justify-content-between gap-3"
-        >
-          <ul class="announce__list list-unstyled mb-0">
-            <li class="announce__item">
-              <i class="bi bi-truck" aria-hidden="true"></i>
-              <span>Free shipping on orders over $100</span>
-            </li>
-            <li class="announce__item d-none d-lg-flex">
-              <i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i>
-              <span>30-day free returns</span>
-            </li>
-          </ul>
-          <div class="d-none d-md-flex align-items-center gap-3">
-            <a href="orders.html">Track an order</a>
-            <a href="faq.html">Help</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="navbar-main" id="navbarMain">
-        <div class="container">
-          <div
-            class="d-flex align-items-center gap-3"
-            style="min-height: var(--navbar-h)"
-          >
-            <a class="brand" href="index.html">
-              <span class="brand__mark" aria-hidden="true">
-                <img src="./assets/images/logo-mark.svg" alt="" width="31" />
-              </span>
-              Meridian
-            </a>
-
-            <!-- Desktop navigation -->
-            <nav class="nav-main ms-2" aria-label="Main">
-              <div class="dropdown megamenu js-hover-dropdown">
-                <button
-                  class="nav-main__link"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  data-bs-auto-close="outside"
-                  aria-expanded="false"
-                >
-                  <i class="bi bi-grid-3x3-gap" aria-hidden="true"></i>
-                  Categories
-                  <i
-                    class="bi bi-chevron-down"
-                    style="font-size: 0.7rem"
-                    aria-hidden="true"
-                  ></i>
-                </button>
-
-                <div class="dropdown-menu megamenu__panel mt-2">
-                  <div class="row g-4">
-                    <div class="col-lg-2 col-md-4 col-6">
-                      <h2 class="megamenu__group-title h6">
-                        <i class="bi bi-cpu"></i>Electronics
-                      </h2>
-                      <ul class="megamenu__links">
-                        <li>
-                          <a
-                            href="shop.html?category=electronics&amp;sub=Smartphones"
-                            >Smartphones</a
-                          >
+        <header class="site-header">
+            <div class="announce">
+                <div class="container d-flex align-items-center justify-content-between gap-3">
+                    <ul class="announce__list list-unstyled mb-0">
+                        <li class="announce__item">
+                            <i class="bi bi-truck" aria-hidden="true"></i>
+                            <span>Free shipping on orders over $100</span>
                         </li>
-                        <li>
-                          <a
-                            href="shop.html?category=electronics&amp;sub=Laptops"
-                            >Laptops</a
-                          >
+                        <li class="announce__item d-none d-lg-flex">
+                            <i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i>
+                            <span>30-day free returns</span>
                         </li>
-                        <li>
-                          <a
-                            href="shop.html?category=electronics&amp;sub=Tablets"
-                            >Tablets</a
-                          >
-                        </li>
-                        <li>
-                          <a href="shop.html?category=electronics&amp;sub=Audio"
-                            >Audio</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            href="shop.html?category=electronics&amp;sub=Cameras"
-                            >Cameras</a
-                          >
-                        </li>
-                      </ul>
+                    </ul>
+                    <div class="d-none d-md-flex align-items-center gap-3">
+                        <a href="orders.html">Track an order</a>
+                        <a href="faq.html">Help</a>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                      <h2 class="megamenu__group-title h6">
-                        <i class="bi bi-bag"></i>Fashion
-                      </h2>
-                      <ul class="megamenu__links">
-                        <li>
-                          <a href="shop.html?category=fashion">Men</a>
-                        </li>
-                        <li>
-                          <a href="shop.html?category=fashion">Women</a>
-                        </li>
-                        <li>
-                          <a href="shop.html?category=fashion&amp;sub=Shoes"
-                            >Shoes</a
-                          >
-                        </li>
-                        <li>
-                          <a href="shop.html?category=fashion&amp;sub=Outerwear"
-                            >Outerwear</a
-                          >
-                        </li>
-                        <li>
-                          <a href="shop.html?category=accessories"
-                            >Accessories</a
-                          >
-                        </li>
-                      </ul>
+                </div>
+            </div>
+
+            <div class="navbar-main" id="navbarMain">
+                <div class="container">
+                    <div class="d-flex align-items-center gap-3" style="min-height: var(--navbar-h)">
+                        <a class="brand" href="index.html">
+                            <span class="brand__mark" aria-hidden="true">
+                                <img src="./assets/images/logo-mark.svg" alt="" width="31" />
+                            </span>
+                            Meridian
+                        </a>
+
+                        <!-- Desktop navigation -->
+                        <nav class="nav-main ms-2" aria-label="Main">
+                            <div class="dropdown megamenu js-hover-dropdown">
+                                <button
+                                    class="nav-main__link"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside"
+                                    aria-expanded="false"
+                                >
+                                    <i class="bi bi-grid-3x3-gap" aria-hidden="true"></i>
+                                    Categories
+                                    <i class="bi bi-chevron-down" style="font-size: 0.7rem" aria-hidden="true"></i>
+                                </button>
+
+                                <div class="dropdown-menu megamenu__panel mt-2">
+                                    <div class="row g-4">
+                                        <div class="col-lg-2 col-md-4 col-6">
+                                            <h2 class="megamenu__group-title h6">
+                                                <i class="bi bi-cpu"></i>Electronics
+                                            </h2>
+                                            <ul class="megamenu__links">
+                                                <li>
+                                                    <a href="shop.html?category=electronics&amp;sub=Smartphones"
+                                                        >Smartphones</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a href="shop.html?category=electronics&amp;sub=Laptops">Laptops</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shop.html?category=electronics&amp;sub=Tablets">Tablets</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shop.html?category=electronics&amp;sub=Audio">Audio</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shop.html?category=electronics&amp;sub=Cameras">Cameras</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-6">
+                                            <h2 class="megamenu__group-title h6"><i class="bi bi-bag"></i>Fashion</h2>
+                                            <ul class="megamenu__links">
+                                                <li>
+                                                    <a href="shop.html?category=fashion">Men</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shop.html?category=fashion">Women</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shop.html?category=fashion&amp;sub=Shoes">Shoes</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shop.html?category=fashion&amp;sub=Outerwear">Outerwear</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shop.html?category=accessories">Accessories</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-6">
+                                            <h2 class="megamenu__group-title h6">
+                                                <i class="bi bi-house-door"></i>Home
+                                            </h2>
+                                            <ul class="megamenu__links">
+                                                <li>
+                                                    <a href="shop.html?category=home&amp;sub=Furniture">Furniture</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shop.html?category=home&amp;sub=Kitchen">Kitchen</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shop.html?category=home&amp;sub=Lighting">Lighting</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shop.html?category=home&amp;sub=Decoration">Decoration</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-2 col-md-4 col-6">
+                                            <h2 class="megamenu__group-title h6">
+                                                <i class="bi bi-controller"></i>Gaming
+                                            </h2>
+                                            <ul class="megamenu__links">
+                                                <li>
+                                                    <a href="shop.html?category=gaming">Controllers</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shop.html?category=gaming">Headsets</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shop.html?category=sports">Sports</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shop.html?category=beauty">Beauty</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <a class="megamenu__promo" href="shop.html?sale=1">
+                                                <img src="assets/images/promo-audio.svg" alt="" loading="lazy" />
+                                                <span class="badge-brand align-self-start mb-2">Ends Sunday</span>
+                                                <span class="h4 mb-1 text-white">Up to 40% off audio</span>
+                                                <span class="small" style="color: rgba(255, 255, 255, 0.8)"
+                                                    >Aurora, Pulse and Cove, all reduced.</span
+                                                >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="nav-main__link" href="shop.html" data-page="shop.html">Shop</a>
+                            <a class="nav-main__link" href="shop.html?sort=newest">New arrivals</a>
+                            <a class="nav-main__link" href="shop.html?sale=1">Deals</a>
+                            <a class="nav-main__link" href="about.html" data-page="about.html">About</a>
+                        </nav>
+
+                        <form class="search js-search ms-auto header-desktop-only" role="search" autocomplete="off">
+                            <div class="search__field">
+                                <i class="bi bi-search search__icon" aria-hidden="true"></i>
+                                <label class="visually-hidden" for="searchDesktop">Search products</label>
+                                <input
+                                    class="search__input"
+                                    id="searchDesktop"
+                                    type="search"
+                                    name="q"
+                                    placeholder="Search for products, brands and categories"
+                                    role="combobox"
+                                    aria-expanded="false"
+                                    aria-controls="searchResultsDesktop"
+                                    aria-autocomplete="list"
+                                />
+                                <button class="search__clear" type="button" aria-label="Clear search">
+                                    <i class="bi bi-x-lg" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div
+                                class="autocomplete"
+                                id="searchResultsDesktop"
+                                role="listbox"
+                                aria-label="Search suggestions"
+                            ></div>
+                        </form>
+
+                        <div class="d-flex align-items-center gap-1 ms-auto ms-lg-0">
+                            <button
+                                class="btn-icon js-theme-toggle"
+                                type="button"
+                                aria-pressed="false"
+                                aria-label="Switch to dark theme"
+                                data-bs-toggle="tooltip"
+                                title="Theme"
+                            >
+                                <i class="bi bi-moon-stars" aria-hidden="true"></i>
+                            </button>
+
+                            <a
+                                class="btn-icon header-desktop-only"
+                                href="wishlist.html"
+                                aria-label="Wishlist"
+                                data-bs-toggle="tooltip"
+                                title="Wishlist"
+                            >
+                                <i class="bi bi-heart" aria-hidden="true"></i>
+                                <span class="icon-count js-wish-count" data-count="0">0</span>
+                            </a>
+
+                            <button
+                                class="btn-icon js-cart-label"
+                                type="button"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#miniCart"
+                                aria-controls="miniCart"
+                                aria-label="Cart, 0 items"
+                            >
+                                <i class="bi bi-bag" aria-hidden="true"></i>
+                                <span class="icon-count js-cart-count" data-count="0">0</span>
+                            </button>
+
+                            <div class="dropdown header-desktop-only">
+                                <button
+                                    class="btn-icon"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    aria-label="Account menu"
+                                >
+                                    <i class="bi bi-person" aria-hidden="true"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end mt-2">
+                                    <li class="dropdown-header">Maya Okafor</li>
+                                    <li>
+                                        <a class="dropdown-item" href="profile.html"
+                                            ><i class="bi bi-person-circle"></i>Profile</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="orders.html"
+                                            ><i class="bi bi-box-seam"></i>Orders</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="wishlist.html"
+                                            ><i class="bi bi-heart"></i>Wishlist</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="addresses.html"
+                                            ><i class="bi bi-geo-alt"></i>Addresses</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a class="dropdown-item" href="dashboard.html"
+                                            ><i class="bi bi-speedometer2"></i>Admin dashboard</a
+                                        >
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <a class="dropdown-item is-danger" href="login.html"
+                                            ><i class="bi bi-box-arrow-right"></i>Sign out</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button
+                                class="btn-icon header-mobile-only d-none"
+                                type="button"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#mobileNav"
+                                aria-controls="mobileNav"
+                                aria-label="Open menu"
+                            >
+                                <i class="bi bi-list" aria-hidden="true"></i>
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                      <h2 class="megamenu__group-title h6">
-                        <i class="bi bi-house-door"></i>Home
-                      </h2>
-                      <ul class="megamenu__links">
-                        <li>
-                          <a href="shop.html?category=home&amp;sub=Furniture"
-                            >Furniture</a
-                          >
-                        </li>
-                        <li>
-                          <a href="shop.html?category=home&amp;sub=Kitchen"
-                            >Kitchen</a
-                          >
-                        </li>
-                        <li>
-                          <a href="shop.html?category=home&amp;sub=Lighting"
-                            >Lighting</a
-                          >
-                        </li>
-                        <li>
-                          <a href="shop.html?category=home&amp;sub=Decoration"
-                            >Decoration</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                      <h2 class="megamenu__group-title h6">
-                        <i class="bi bi-controller"></i>Gaming
-                      </h2>
-                      <ul class="megamenu__links">
-                        <li>
-                          <a href="shop.html?category=gaming">Controllers</a>
-                        </li>
-                        <li>
-                          <a href="shop.html?category=gaming">Headsets</a>
-                        </li>
-                        <li>
-                          <a href="shop.html?category=sports">Sports</a>
-                        </li>
-                        <li>
-                          <a href="shop.html?category=beauty">Beauty</a>
-                        </li>
-                      </ul>
-                    </div>
 
-                    <div class="col-lg-4">
-                      <a class="megamenu__promo" href="shop.html?sale=1">
-                        <img
-                          src="assets/images/promo-audio.svg"
-                          alt=""
-                          loading="lazy"
-                        />
-                        <span class="badge-brand align-self-start mb-2"
-                          >Ends Sunday</span
-                        >
-                        <span class="h4 mb-1 text-white"
-                          >Up to 40% off audio</span
-                        >
-                        <span
-                          class="small"
-                          style="color: rgba(255, 255, 255, 0.8)"
-                          >Aurora, Pulse and Cove, all reduced.</span
-                        >
-                      </a>
-                    </div>
-                  </div>
+                    <form class="search js-search header-mobile-only d-none pb-3" role="search" autocomplete="off">
+                        <div class="search__field">
+                            <i class="bi bi-search search__icon" aria-hidden="true"></i>
+                            <label class="visually-hidden" for="searchMobile">Search products</label>
+                            <input
+                                class="search__input"
+                                id="searchMobile"
+                                type="search"
+                                name="q"
+                                placeholder="Search products"
+                                role="combobox"
+                                aria-expanded="false"
+                                aria-controls="searchResultsMobile"
+                                aria-autocomplete="list"
+                            />
+                            <button class="search__clear" type="button" aria-label="Clear search">
+                                <i class="bi bi-x-lg" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div
+                            class="autocomplete"
+                            id="searchResultsMobile"
+                            role="listbox"
+                            aria-label="Search suggestions"
+                        ></div>
+                    </form>
                 </div>
-              </div>
+            </div>
+            <div class="header-spacer" id="headerSpacer" aria-hidden="true"></div>
+        </header>
 
-              <a class="nav-main__link" href="shop.html" data-page="shop.html"
-                >Shop</a
-              >
-              <a class="nav-main__link" href="shop.html?sort=newest"
-                >New arrivals</a
-              >
-              <a class="nav-main__link" href="shop.html?sale=1">Deals</a>
-              <a class="nav-main__link" href="about.html" data-page="about.html"
-                >About</a
-              >
-            </nav>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavTitle">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title h5" id="mobileNavTitle">Menu</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav aria-label="Mobile">
+                    <a class="offcanvas-nav__link" href="shop.html"
+                        >Shop all<i class="bi bi-chevron-right" aria-hidden="true"></i
+                    ></a>
 
-            <form
-              class="search js-search ms-auto header-desktop-only"
-              role="search"
-              autocomplete="off"
-            >
-              <div class="search__field">
-                <i class="bi bi-search search__icon" aria-hidden="true"></i>
-                <label class="visually-hidden" for="searchDesktop"
-                  >Search products</label
-                >
-                <input
-                  class="search__input"
-                  id="searchDesktop"
-                  type="search"
-                  name="q"
-                  placeholder="Search for products, brands and categories"
-                  role="combobox"
-                  aria-expanded="false"
-                  aria-controls="searchResultsDesktop"
-                  aria-autocomplete="list"
-                />
-                <button
-                  class="search__clear"
-                  type="button"
-                  aria-label="Clear search"
-                >
-                  <i class="bi bi-x-lg" aria-hidden="true"></i>
-                </button>
-              </div>
-              <div
-                class="autocomplete"
-                id="searchResultsDesktop"
-                role="listbox"
-                aria-label="Search suggestions"
-              ></div>
-            </form>
-
-            <div class="d-flex align-items-center gap-1 ms-auto ms-lg-0">
-              <button
-                class="btn-icon js-theme-toggle"
-                type="button"
-                aria-pressed="false"
-                aria-label="Switch to dark theme"
-                data-bs-toggle="tooltip"
-                title="Theme"
-              >
-                <i class="bi bi-moon-stars" aria-hidden="true"></i>
-              </button>
-
-              <a
-                class="btn-icon header-desktop-only"
-                href="wishlist.html"
-                aria-label="Wishlist"
-                data-bs-toggle="tooltip"
-                title="Wishlist"
-              >
-                <i class="bi bi-heart" aria-hidden="true"></i>
-                <span class="icon-count js-wish-count" data-count="0">0</span>
-              </a>
-
-              <button
-                class="btn-icon js-cart-label"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#miniCart"
-                aria-controls="miniCart"
-                aria-label="Cart, 0 items"
-              >
-                <i class="bi bi-bag" aria-hidden="true"></i>
-                <span class="icon-count js-cart-count" data-count="0">0</span>
-              </button>
-
-              <div class="dropdown header-desktop-only">
-                <button
-                  class="btn-icon"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  aria-label="Account menu"
-                >
-                  <i class="bi bi-person" aria-hidden="true"></i>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end mt-2">
-                  <li class="dropdown-header">Maya Okafor</li>
-                  <li>
-                    <a class="dropdown-item" href="profile.html"
-                      ><i class="bi bi-person-circle"></i>Profile</a
+                    <button
+                        class="offcanvas-nav__link w-100 bg-transparent border-0 border-bottom text-start"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mobileCats"
+                        aria-expanded="false"
                     >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="orders.html"
-                      ><i class="bi bi-box-seam"></i>Orders</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="wishlist.html"
-                      ><i class="bi bi-heart"></i>Wishlist</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="addresses.html"
-                      ><i class="bi bi-geo-alt"></i>Addresses</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="dashboard.html"
-                      ><i class="bi bi-speedometer2"></i>Admin dashboard</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item is-danger" href="login.html"
-                      ><i class="bi bi-box-arrow-right"></i>Sign out</a
-                    >
-                  </li>
-                </ul>
-              </div>
-
-              <button
-                class="btn-icon header-mobile-only d-none"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#mobileNav"
-                aria-controls="mobileNav"
-                aria-label="Open menu"
-              >
-                <i class="bi bi-list" aria-hidden="true"></i>
-              </button>
-            </div>
-          </div>
-
-          <form
-            class="search js-search header-mobile-only d-none pb-3"
-            role="search"
-            autocomplete="off"
-          >
-            <div class="search__field">
-              <i class="bi bi-search search__icon" aria-hidden="true"></i>
-              <label class="visually-hidden" for="searchMobile"
-                >Search products</label
-              >
-              <input
-                class="search__input"
-                id="searchMobile"
-                type="search"
-                name="q"
-                placeholder="Search products"
-                role="combobox"
-                aria-expanded="false"
-                aria-controls="searchResultsMobile"
-                aria-autocomplete="list"
-              />
-              <button
-                class="search__clear"
-                type="button"
-                aria-label="Clear search"
-              >
-                <i class="bi bi-x-lg" aria-hidden="true"></i>
-              </button>
-            </div>
-            <div
-              class="autocomplete"
-              id="searchResultsMobile"
-              role="listbox"
-              aria-label="Search suggestions"
-            ></div>
-          </form>
-        </div>
-      </div>
-      <div class="header-spacer" id="headerSpacer" aria-hidden="true"></div>
-    </header>
-
-    <div
-      class="offcanvas offcanvas-start"
-      tabindex="-1"
-      id="mobileNav"
-      aria-labelledby="mobileNavTitle"
-    >
-      <div class="offcanvas-header">
-        <h2 class="offcanvas-title h5" id="mobileNavTitle">Menu</h2>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close menu"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <nav aria-label="Mobile">
-          <a class="offcanvas-nav__link" href="shop.html"
-            >Shop all<i class="bi bi-chevron-right" aria-hidden="true"></i
-          ></a>
-
-          <button
-            class="offcanvas-nav__link w-100 bg-transparent border-0 border-bottom text-start"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mobileCats"
-            aria-expanded="false"
-          >
-            Categories<i class="bi bi-chevron-down" aria-hidden="true"></i>
-          </button>
-          <div class="collapse" id="mobileCats">
-            <ul class="offcanvas-nav__sub pt-2">
-              <li>
-                <a href="shop.html?category=electronics">Electronics</a>
-              </li>
-              <li>
-                <a href="shop.html?category=fashion">Fashion</a>
-              </li>
-              <li><a href="shop.html?category=home">Home</a></li>
-              <li>
-                <a href="shop.html?category=beauty">Beauty</a>
-              </li>
-              <li>
-                <a href="shop.html?category=sports">Sports</a>
-              </li>
-              <li>
-                <a href="shop.html?category=accessories">Accessories</a>
-              </li>
-              <li>
-                <a href="shop.html?category=gaming">Gaming</a>
-              </li>
-            </ul>
-          </div>
-
-          <a class="offcanvas-nav__link" href="shop.html?sort=newest"
-            >New arrivals<i class="bi bi-chevron-right" aria-hidden="true"></i
-          ></a>
-          <a class="offcanvas-nav__link" href="shop.html?sale=1"
-            >Deals<i class="bi bi-chevron-right" aria-hidden="true"></i
-          ></a>
-          <a class="offcanvas-nav__link" href="wishlist.html">
-            Wishlist
-            <span class="badge-soft js-wish-count" data-count="0">0</span>
-          </a>
-          <a class="offcanvas-nav__link" href="about.html"
-            >About<i class="bi bi-chevron-right" aria-hidden="true"></i
-          ></a>
-          <a class="offcanvas-nav__link" href="contact.html"
-            >Contact<i class="bi bi-chevron-right" aria-hidden="true"></i
-          ></a>
-        </nav>
-
-        <div class="mt-4 pt-3 border-top">
-          <p class="text-xs text-muted-2 mb-2">Your account</p>
-          <div class="d-grid gap-2">
-            <a class="btn btn-brand" href="login.html">Sign in</a>
-            <a class="btn btn-outline-ink" href="register.html"
-              >Create account</a
-            >
-          </div>
-          <div class="d-grid gap-2 mt-3">
-            <a class="btn btn-quiet justify-content-start" href="profile.html"
-              ><i class="bi bi-person-circle"></i>Profile</a
-            >
-            <a class="btn btn-quiet justify-content-start" href="orders.html"
-              ><i class="bi bi-box-seam"></i>Orders</a
-            >
-            <a class="btn btn-quiet justify-content-start" href="dashboard.html"
-              ><i class="bi bi-speedometer2"></i>Admin dashboard</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <main id="main">
-      <section class="hero">
-        <div class="container">
-          <div class="hero__inner">
-            <div>
-              <p class="hero__eyebrow hero-anim hero-anim--1">
-                <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
-                Autumn sale is live - up to 40% off
-              </p>
-              <h1 class="display-title hero__title hero-anim hero-anim--2">
-                Everything you love. One Place.
-              </h1>
-              <p class="hero__text hero-anim hero-adnim--3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas eligendi aliquid accusantium illum sit harum id ipsa
-                accusamus tempore quidem.
-              </p>
-              <div class="hero__actions hero-adnim hero-anim--4">
-                <a href="shop.html" class="btn btn-brand btn-lg-brand">
-                  Shop now
-                </a>
-                <a
-                  href="shop.html?sort=newest"
-                  class="btn btn-outline-ink btn-lg-brand"
-                >
-                  Explore collection
-                </a>
-              </div>
-
-              <div class="hero__trust hero-anim hero-anim--5">
-                <div class="hero__truest-item">
-                  <span class="hero__trust-value num">4.8</span>
-                  <span class="hero__trust-label">Average rating</span>
-                </div>
-                <div class="hero__truest-item">
-                  <span class="hero__trust-value num">12k+</span>
-                  <span class="hero__trust-label">Orders shipped</span>
-                </div>
-                <div class="hero__truest-item">
-                  <span class="hero__trust-value num">30 days</span>
-                  <span class="hero__trust-label">Free Returns</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="hero__media hero-anim hero-anim--3">
-              <div class="hero__plate">
-                <img
-                  src="./assets/images/hero-collection.svg"
-                  alt="a group of meridian products"
-                  width="1200"
-                  height="960"
-                  fetchpriority="high"
-                />
-              </div>
-              <a href="product.html?p=aurora-over-ear" class="hero__tag">
-                <img
-                  src="./assets/images/product-aurora-over-ear.svg"
-                  alt=""
-                  loading="lazy"
-                />
-                <span class="min-w-0">
-                  <span class="d-block text-xs text-muted-2">Best seller</span>
-                  <span class="d-block fw-semibold small text-truncate"
-                    >Aurora Over-Ear</span
-                  >
-                  <span class="price">$279.00</span>
-                  <span class="price-old ms-1">$349.00</span>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section reveal">
-        <div class="container">
-          <div class="section-head">
-            <div>
-              <h2 class="section-head__title">Shop by category</h2>
-              <p class="section-head__sub">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-            </div>
-            <div class="section-head__aside">
-              <a href="shop.html" class="btn btn-outline-ink">All Products</a>
-            </div>
-          </div>
-          <div class="row g-3 g-lg-4" id="categoryGrid">
-            <div class="col-6 col-md-4 col-lg-3">
-              <a href="shop.html">
-                <img
-                  src="./assets/images/category-electronics.svg"
-                  alt=""
-                  loading="lazy"
-                  width="640"
-                  height="800"
-                />
-                <span class="category-tile__label">
-                  <span class="category-tile__name d-block">Electrpnics</span>
-                  <span class="category-tile__count">11 products</span>
-                </span>
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <a href="shop.html">
-                <img
-                  src="./assets/images/category-accessories.svg"
-                  alt=""
-                  loading="lazy"
-                  width="640"
-                  height="800"
-                />
-                <span class="category-tile__label">
-                  <span class="category-tile__name d-block">Accessories</span>
-                  <span class="category-tile__count">21 products</span>
-                </span>
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <a href="shop.html">
-                <img
-                  src="./assets/images/category-beauty.svg"
-                  alt=""
-                  loading="lazy"
-                  width="640"
-                  height="800"
-                />
-                <span class="category-tile__label">
-                  <span class="category-tile__name d-block">Beauty</span>
-                  <span class="category-tile__count">15 products</span>
-                </span>
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <a href="shop.html">
-                <img
-                  src="./assets/images/category-fashion.svg"
-                  alt=""
-                  loading="lazy"
-                  width="640"
-                  height="800"
-                />
-                <span class="category-tile__label">
-                  <span class="category-tile__name d-block">Fashion</span>
-                  <span class="category-tile__count">5 products</span>
-                </span>
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <a href="shop.html">
-                <img
-                  src="./assets/images/category-gaming.svg"
-                  alt=""
-                  loading="lazy"
-                  width="640"
-                  height="800"
-                />
-                <span class="category-tile__label">
-                  <span class="category-tile__name d-block">Gaming</span>
-                  <span class="category-tile__count">8 products</span>
-                </span>
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <a href="shop.html">
-                <img
-                  src="./assets/images/category-home.svg"
-                  alt=""
-                  loading="lazy"
-                  width="640"
-                  height="800"
-                />
-                <span class="category-tile__label">
-                  <span class="category-tile__name d-block">Home</span>
-                  <span class="category-tile__count">1 products</span>
-                </span>
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <a href="shop.html">
-                <img
-                  src="./assets/images/category-new-arrivals.svg"
-                  alt=""
-                  loading="lazy"
-                  width="640"
-                  height="800"
-                />
-                <span class="category-tile__label">
-                  <span class="category-tile__name d-block">Trend</span>
-                  <span class="category-tile__count">7 products</span>
-                </span>
-              </a>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <a href="shop.html">
-                <img
-                  src="./assets/images/category-sports.svg"
-                  alt=""
-                  loading="lazy"
-                  width="640"
-                  height="800"
-                />
-                <span class="category-tile__label">
-                  <span class="category-tile__name d-block">Sports</span>
-                  <span class="category-tile__count">1 products</span>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="flash reveal">
-        <div class="container">
-          <div class="section-head">
-            <div>
-              <h2 class="section-head__title">Flash sale</h2>
-              <p class="section-head__sub js-countdown-note">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit, Iusto,
-                nam.
-              </p>
-            </div>
-            <div class="section-head__aside">
-              <div
-                class="countdown js-countdown"
-                role="timer"
-                aria-live="off"
-                aria-label="Time remaining in the flash sale"
-              >
-                <div class="countdown__cell">
-                  <span class="countdown__value" data-unit="days">02</span>
-                  <span class="countdown__label">Days</span>
-                </div>
-                <span class="countdown__sep" aria-hidden="true">:</span>
-                <div class="countdown__cell">
-                  <span class="countdown__value" data-unit="hours">14</span>
-                  <span class="countdown__label">Hours</span>
-                </div>
-                <span class="countdown__sep" aria-hidden="true">:</span>
-                <div class="countdown__cell">
-                  <span class="countdown__value" data-unit="minutes">36</span>
-                  <span class="countdown__label">Minutes</span>
-                </div>
-                <span class="countdown__sep" aria-hidden="true">:</span>
-                <div class="countdown__cell">
-                  <span class="countdown__value" data-unit="seconds">55</span>
-                  <span class="countdown__label">Seconds</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row g-3 g-lg-4" id="flashGrid">
-            <!-- Render by home.js -->
-          </div>
-        </div>
-      </section>
-
-      <section class="section reveal">
-        <div class="container">
-          <div class="section-head">
-            <div>
-              <h2 class="section-head__title">Trending this week</h2>
-              <p class="section-head__sub">
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-              </p>
-            </div>
-            <div class="section-head__aside">
-              <a href="shop.html?sort=popular" class="btn btn-outline-ink"
-                >See all</a
-              >
-            </div>
-          </div>
-
-          <div class="row g-3 g-lg-4" id="trendingGrid">
-            <!-- Render by home.js -->
-          </div>
-        </div>
-      </section>
-
-      <section class="section-tight reveal">
-        <div class="container">
-          <div class="promo-split">
-            <a href="shop.html?category=fashion" class="promo-card">
-              <img
-                src="./assets/images/promo-summer.svg"
-                alt=""
-                loading="lazy"
-              />
-              <p class="prompo-card__kicker mb-2">Fashion</p>
-              <h2 class="h2 mb-2">Summer collection</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-              <span class="btn btn-brand align-self-start"
-                >Explore collection</span
-              >
-            </a>
-            <a href="shop.html?category=home" class="promo-card">
-              <img src="./assets/images/promo-home.svg" alt="" loading="lazy" />
-              <p class="prompo-card__kicker mb-2">Home</p>
-              <h2 class="h2 mb-2">Light it</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-              <span
-                class="btn btn-brand align-self-start"
-                style="
-                  background: rgba(255, 255, 255, 0.95);
-                  border-color: transparent;
-                  color: #111827;
-                "
-              >
-                Shop home
-              </span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section reveal">
-        <div class="container">
-          <div class="section-head">
-            <div>
-              <h2 class="section-head__title">New arrivals</h2>
-              <p class="section-head__sub">
-                Added in the last few weeks. Swipe or use the arrows.
-              </p>
-            </div>
-            <div class="section-head__aside">
-              <div class="rail-nav">
-                <button
-                  class="rail-nav__btn js-rail-prev"
-                  type="button"
-                  aria-label="Previous products"
-                >
-                  <i class="bi bi-chevron-left" aria-hidden="true"></i>
-                </button>
-                <button
-                  class="rail-nav__btn js-rail-next"
-                  type="button"
-                  aria-label="Next products"
-                >
-                  <i class="bi bi-chevron-right" aria-hidden="true"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="rail-wrap">
-            <div
-              class="rail"
-              id="arrivalsRail"
-              tabindex="0"
-              role="group"
-              aria-label="New arrivals carousel"
-            >
-              <!-- Render by home.js -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt divider-top reveal is-visible">
-        <div class="container">
-          <div class="row g-3 g-lg-4">
-            <div class="col-sm-6 col-lg-3">
-              <div class="feature-card">
-                <span class="feature-card__icon"
-                  ><i class="bi bi-truck" aria-hidden="true"></i
-                ></span>
-                <h3>Free shipping over $100</h3>
-                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <div class="feature-card">
-                <span class="feature-card__icon"
-                  ><i class="bi bi-shield-check" aria-hidden="true"></i
-                ></span>
-                <h3>Secure payment</h3>
-                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <div class="feature-card">
-                <span class="feature-card__icon"
-                  ><i
-                    class="bi bi-arrow-counterclockwise"
-                    aria-hidden="true"
-                  ></i
-                ></span>
-                <h3>Easy returns</h3>
-                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <div class="feature-card">
-                <span class="feature-card__icon"
-                  ><i class="bi bi-headset" aria-hidden="true"></i
-                ></span>
-                <h3>Support, 24/7</h3>
-                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-tight reveal is-visible">
-        <div class="container">
-          <div class="newsletter">
-            <div class="row align-items-center g-4">
-              <div class="col-lg-6">
-                <h2 class="h2 mb-2">Get 10% off your first order</h2>
-                <p
-                  class="mb-0"
-                  style="color: rgba(226, 232, 240, 0.75); max-width: 44ch"
-                >
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Repudiandae ad earum et totam aspernatur quia dignissimos.
-                </p>
-              </div>
-
-              <div class="col-lg-6">
-                <form class="js-newsletter" novalidate="">
-                  <div class="d-flex gap-2 flex-wrap">
-                    <label class="visually-hidden" for="ctaEmail"
-                      >Email address</label
-                    >
-                    <input
-                      class="form-control flex-grow-1"
-                      id="ctaEmail"
-                      type="email"
-                      name="email"
-                      placeholder="you@example.com"
-                      required=""
-                      style="min-width: 220px; height: 48px"
-                    />
-                    <button class="btn btn-brand btn-lg-brand" type="submit">
-                      Subscribe
+                        Categories<i class="bi bi-chevron-down" aria-hidden="true"></i>
                     </button>
-                  </div>
-                  <p
-                    class="text-xs mt-2 mb-0"
-                    style="color: rgba(226, 232, 240, 0.6)"
-                  >
-                    Unsubscribe any time. We never sell your address.
-                  </p>
-                </form>
-              </div>
+                    <div class="collapse" id="mobileCats">
+                        <ul class="offcanvas-nav__sub pt-2">
+                            <li>
+                                <a href="shop.html?category=electronics">Electronics</a>
+                            </li>
+                            <li>
+                                <a href="shop.html?category=fashion">Fashion</a>
+                            </li>
+                            <li><a href="shop.html?category=home">Home</a></li>
+                            <li>
+                                <a href="shop.html?category=beauty">Beauty</a>
+                            </li>
+                            <li>
+                                <a href="shop.html?category=sports">Sports</a>
+                            </li>
+                            <li>
+                                <a href="shop.html?category=accessories">Accessories</a>
+                            </li>
+                            <li>
+                                <a href="shop.html?category=gaming">Gaming</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a class="offcanvas-nav__link" href="shop.html?sort=newest"
+                        >New arrivals<i class="bi bi-chevron-right" aria-hidden="true"></i
+                    ></a>
+                    <a class="offcanvas-nav__link" href="shop.html?sale=1"
+                        >Deals<i class="bi bi-chevron-right" aria-hidden="true"></i
+                    ></a>
+                    <a class="offcanvas-nav__link" href="wishlist.html">
+                        Wishlist
+                        <span class="badge-soft js-wish-count" data-count="0">0</span>
+                    </a>
+                    <a class="offcanvas-nav__link" href="about.html"
+                        >About<i class="bi bi-chevron-right" aria-hidden="true"></i
+                    ></a>
+                    <a class="offcanvas-nav__link" href="contact.html"
+                        >Contact<i class="bi bi-chevron-right" aria-hidden="true"></i
+                    ></a>
+                </nav>
+
+                <div class="mt-4 pt-3 border-top">
+                    <p class="text-xs text-muted-2 mb-2">Your account</p>
+                    <div class="d-grid gap-2">
+                        <a class="btn btn-brand" href="login.html">Sign in</a>
+                        <a class="btn btn-outline-ink" href="register.html">Create account</a>
+                    </div>
+                    <div class="d-grid gap-2 mt-3">
+                        <a class="btn btn-quiet justify-content-start" href="profile.html"
+                            ><i class="bi bi-person-circle"></i>Profile</a
+                        >
+                        <a class="btn btn-quiet justify-content-start" href="orders.html"
+                            ><i class="bi bi-box-seam"></i>Orders</a
+                        >
+                        <a class="btn btn-quiet justify-content-start" href="dashboard.html"
+                            ><i class="bi bi-speedometer2"></i>Admin dashboard</a
+                        >
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
-    </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row g-4 g-lg-5">
-          <div class="col-lg-4">
-            <a href="indeh.html" class="brand mb-3">
-              <span class="brand__mark" aria-hidden="true">
-                <img src="./assets/images/logo-mark.svg" alt="" width="35" />
-              </span>
-              Meridian
-            </a>
-            <p class="footer-note mb-4" style="max-width: 34ch">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-              numquam distinctio vero eum vel, quasi odio nesciunt commodi nemo
-              provident!
-            </p>
-            <h3>Get 10% off your first order</h3>
-            <form action="#" method="post" class="js-newsletter">
-              <div class="d-flex gap-2 flex-wrap" style="max-width: 360px">
-                <label for="footerEmail" class="visually-hidden">
-                  Email address
-                </label>
-                <input
-                  type="email"
-                  id="footerEmail"
-                  class="form-control flex-grow-1"
-                  placeholder="you@example.com"
-                  style="min-width: 180px"
-                  required
-                />
-                <button type="submit" class="btn btn-brand">Subscribe</button>
-              </div>
-              <p class="text-xs mt-2 mb-0" style="color: #94a3b8">
-                One email a week.
-              </p>
-            </form>
-          </div>
+        <main id="main">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <div>
+                            <p class="hero__eyebrow hero-anim hero-anim--1">
+                                <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
+                                Autumn sale is live - up to 40% off
+                            </p>
+                            <h1 class="display-title hero__title hero-anim hero-anim--2">
+                                Everything you love. One Place.
+                            </h1>
+                            <p class="hero__text hero-anim hero-adnim--3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eligendi aliquid
+                                accusantium illum sit harum id ipsa accusamus tempore quidem.
+                            </p>
+                            <div class="hero__actions hero-adnim hero-anim--4">
+                                <a href="shop.html" class="btn btn-brand btn-lg-brand"> Shop now </a>
+                                <a href="shop.html?sort=newest" class="btn btn-outline-ink btn-lg-brand">
+                                    Explore collection
+                                </a>
+                            </div>
 
-          <div class="col-6 col-lg-2">
-            <h3>Shop</h3>
-            <ul class="footer-links">
-              <li><a href="shop.html">All Products</a></li>
-              <li><a href="shop.html?sort=newest">New Arrivals</a></li>
-              <li><a href="shop.html?sale=1">Deals</a></li>
-              <li><a href="shop.html?category=electronics">Electronics</a></li>
-              <li><a href="shop.html?category=fashion">Fashion</a></li>
-              <li><a href="shop.html?category=home">Home</a></li>
-              <li><a href="shop.html?category=gaming">Gaming</a></li>
-            </ul>
-          </div>
+                            <div class="hero__trust hero-anim hero-anim--5">
+                                <div class="hero__truest-item">
+                                    <span class="hero__trust-value num">4.8</span>
+                                    <span class="hero__trust-label">Average rating</span>
+                                </div>
+                                <div class="hero__truest-item">
+                                    <span class="hero__trust-value num">12k+</span>
+                                    <span class="hero__trust-label">Orders shipped</span>
+                                </div>
+                                <div class="hero__truest-item">
+                                    <span class="hero__trust-value num">30 days</span>
+                                    <span class="hero__trust-label">Free Returns</span>
+                                </div>
+                            </div>
+                        </div>
 
-          <div class="col-6 col-lg-2">
-            <h3>Company</h3>
-            <ul class="footer-links">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="about.html#values">Our values</a></li>
-              <li><a href="about.html#team">Team</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li>
-                <a href="https://farzadasgari.github.io/lumen/">Admin demo</a>
-              </li>
-            </ul>
-          </div>
+                        <div class="hero__media hero-anim hero-anim--3">
+                            <div class="hero__plate">
+                                <img
+                                    src="./assets/images/hero-collection.svg"
+                                    alt="a group of meridian products"
+                                    width="1200"
+                                    height="960"
+                                    fetchpriority="high"
+                                />
+                            </div>
+                            <a href="product.html?p=aurora-over-ear" class="hero__tag">
+                                <img src="./assets/images/product-aurora-over-ear.svg" alt="" loading="lazy" />
+                                <span class="min-w-0">
+                                    <span class="d-block text-xs text-muted-2">Best seller</span>
+                                    <span class="d-block fw-semibold small text-truncate">Aurora Over-Ear</span>
+                                    <span class="price">$279.00</span>
+                                    <span class="price-old ms-1">$349.00</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-          <div class="col-6 col-lg-2">
-            <h3>Support</h3>
-            <ul class="footer-links">
-              <li><a href="faq.html">Help center</a></li>
-              <li><a href="orders.html">Track an order</a></li>
-              <li><a href="faq.html#returns">Returns</a></li>
-              <li><a href="faq.html#shipping">Shipping</a></li>
-              <li><a href="profile.html">Your account</a></li>
-            </ul>
-          </div>
+            <section class="section reveal">
+                <div class="container">
+                    <div class="section-head">
+                        <div>
+                            <h2 class="section-head__title">Shop by category</h2>
+                            <p class="section-head__sub">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="section-head__aside">
+                            <a href="shop.html" class="btn btn-outline-ink">All Products</a>
+                        </div>
+                    </div>
+                    <div class="row g-3 g-lg-4" id="categoryGrid">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <a href="shop.html">
+                                <img
+                                    src="./assets/images/category-electronics.svg"
+                                    alt=""
+                                    loading="lazy"
+                                    width="640"
+                                    height="800"
+                                />
+                                <span class="category-tile__label">
+                                    <span class="category-tile__name d-block">Electrpnics</span>
+                                    <span class="category-tile__count">11 products</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <a href="shop.html">
+                                <img
+                                    src="./assets/images/category-accessories.svg"
+                                    alt=""
+                                    loading="lazy"
+                                    width="640"
+                                    height="800"
+                                />
+                                <span class="category-tile__label">
+                                    <span class="category-tile__name d-block">Accessories</span>
+                                    <span class="category-tile__count">21 products</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <a href="shop.html">
+                                <img
+                                    src="./assets/images/category-beauty.svg"
+                                    alt=""
+                                    loading="lazy"
+                                    width="640"
+                                    height="800"
+                                />
+                                <span class="category-tile__label">
+                                    <span class="category-tile__name d-block">Beauty</span>
+                                    <span class="category-tile__count">15 products</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <a href="shop.html">
+                                <img
+                                    src="./assets/images/category-fashion.svg"
+                                    alt=""
+                                    loading="lazy"
+                                    width="640"
+                                    height="800"
+                                />
+                                <span class="category-tile__label">
+                                    <span class="category-tile__name d-block">Fashion</span>
+                                    <span class="category-tile__count">5 products</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <a href="shop.html">
+                                <img
+                                    src="./assets/images/category-gaming.svg"
+                                    alt=""
+                                    loading="lazy"
+                                    width="640"
+                                    height="800"
+                                />
+                                <span class="category-tile__label">
+                                    <span class="category-tile__name d-block">Gaming</span>
+                                    <span class="category-tile__count">8 products</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <a href="shop.html">
+                                <img
+                                    src="./assets/images/category-home.svg"
+                                    alt=""
+                                    loading="lazy"
+                                    width="640"
+                                    height="800"
+                                />
+                                <span class="category-tile__label">
+                                    <span class="category-tile__name d-block">Home</span>
+                                    <span class="category-tile__count">1 products</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <a href="shop.html">
+                                <img
+                                    src="./assets/images/category-new-arrivals.svg"
+                                    alt=""
+                                    loading="lazy"
+                                    width="640"
+                                    height="800"
+                                />
+                                <span class="category-tile__label">
+                                    <span class="category-tile__name d-block">Trend</span>
+                                    <span class="category-tile__count">7 products</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <a href="shop.html">
+                                <img
+                                    src="./assets/images/category-sports.svg"
+                                    alt=""
+                                    loading="lazy"
+                                    width="640"
+                                    height="800"
+                                />
+                                <span class="category-tile__label">
+                                    <span class="category-tile__name d-block">Sports</span>
+                                    <span class="category-tile__count">1 products</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-          <div class="col-6 col-lg-2">
-            <h3>Legal</h3>
-            <ul class="footer-links">
-              <li><a href="privacy.html">Privacy</a></li>
-              <li><a href="terms.html">Terms</a></li>
-              <li><a href="privacy.html#cookies">Cookies</a></li>
-              <li><a href="terms.html#accessibility">Accessibility</a></li>
-            </ul>
-          </div>
+            <section class="flash reveal">
+                <div class="container">
+                    <div class="section-head">
+                        <div>
+                            <h2 class="section-head__title">Flash sale</h2>
+                            <p class="section-head__sub js-countdown-note">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit, Iusto, nam.
+                            </p>
+                        </div>
+                        <div class="section-head__aside">
+                            <div
+                                class="countdown js-countdown"
+                                role="timer"
+                                aria-live="off"
+                                aria-label="Time remaining in the flash sale"
+                            >
+                                <div class="countdown__cell">
+                                    <span class="countdown__value" data-unit="days">02</span>
+                                    <span class="countdown__label">Days</span>
+                                </div>
+                                <span class="countdown__sep" aria-hidden="true">:</span>
+                                <div class="countdown__cell">
+                                    <span class="countdown__value" data-unit="hours">14</span>
+                                    <span class="countdown__label">Hours</span>
+                                </div>
+                                <span class="countdown__sep" aria-hidden="true">:</span>
+                                <div class="countdown__cell">
+                                    <span class="countdown__value" data-unit="minutes">36</span>
+                                    <span class="countdown__label">Minutes</span>
+                                </div>
+                                <span class="countdown__sep" aria-hidden="true">:</span>
+                                <div class="countdown__cell">
+                                    <span class="countdown__value" data-unit="seconds">55</span>
+                                    <span class="countdown__label">Seconds</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-          <div
-            class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-3"
-          >
-            <p class="mb-0">
-              © <span class="js-year">2026</span>
-              Meridian Retail Ltd.
-              <a href="https://github.com/farzadasgari">Farzad Asgari</a>
-            </p>
+                    <div class="row g-3 g-lg-4" id="flashGrid">
+                        <!-- Render by home.js -->
+                    </div>
+                </div>
+            </section>
 
-            <div
-              class="d-flex align-items-center gap-2"
-              aria-label="Accepted payment methods"
-            >
-              <span class="pay-mark"> VISA </span>
-              <span class="pay-mark"> Mastercard </span>
-              <span class="pay-mark"> Amex </span>
-              <span class="pay-mark"> PayPal </span>
-              <span class="pay-mark"> Apple Pay </span>
+            <section class="section reveal">
+                <div class="container">
+                    <div class="section-head">
+                        <div>
+                            <h2 class="section-head__title">Trending this week</h2>
+                            <p class="section-head__sub">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div class="section-head__aside">
+                            <a href="shop.html?sort=popular" class="btn btn-outline-ink">See all</a>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 g-lg-4" id="trendingGrid">
+                        <!-- Render by home.js -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-tight reveal">
+                <div class="container">
+                    <div class="promo-split">
+                        <a href="shop.html?category=fashion" class="promo-card">
+                            <img src="./assets/images/promo-summer.svg" alt="" loading="lazy" />
+                            <p class="prompo-card__kicker mb-2">Fashion</p>
+                            <h2 class="h2 mb-2">Summer collection</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <span class="btn btn-brand align-self-start">Explore collection</span>
+                        </a>
+                        <a href="shop.html?category=home" class="promo-card">
+                            <img src="./assets/images/promo-home.svg" alt="" loading="lazy" />
+                            <p class="prompo-card__kicker mb-2">Home</p>
+                            <h2 class="h2 mb-2">Light it</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                            <span
+                                class="btn btn-brand align-self-start"
+                                style="background: rgba(255, 255, 255, 0.95); border-color: transparent; color: #111827"
+                            >
+                                Shop home
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section reveal">
+                <div class="container">
+                    <div class="section-head">
+                        <div>
+                            <h2 class="section-head__title">New arrivals</h2>
+                            <p class="section-head__sub">Added in the last few weeks. Swipe or use the arrows.</p>
+                        </div>
+                        <div class="section-head__aside">
+                            <div class="rail-nav">
+                                <button class="rail-nav__btn js-rail-prev" type="button" aria-label="Previous products">
+                                    <i class="bi bi-chevron-left" aria-hidden="true"></i>
+                                </button>
+                                <button class="rail-nav__btn js-rail-next" type="button" aria-label="Next products">
+                                    <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rail-wrap">
+                        <div
+                            class="rail"
+                            id="arrivalsRail"
+                            tabindex="0"
+                            role="group"
+                            aria-label="New arrivals carousel"
+                        >
+                            <!-- Render by home.js -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-alt divider-top reveal is-visible">
+                <div class="container">
+                    <div class="row g-3 g-lg-4">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="feature-card">
+                                <span class="feature-card__icon"><i class="bi bi-truck" aria-hidden="true"></i></span>
+                                <h3>Free shipping over $100</h3>
+                                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="feature-card">
+                                <span class="feature-card__icon"
+                                    ><i class="bi bi-shield-check" aria-hidden="true"></i
+                                ></span>
+                                <h3>Secure payment</h3>
+                                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="feature-card">
+                                <span class="feature-card__icon"
+                                    ><i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i
+                                ></span>
+                                <h3>Easy returns</h3>
+                                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="feature-card">
+                                <span class="feature-card__icon"><i class="bi bi-headset" aria-hidden="true"></i></span>
+                                <h3>Support, 24/7</h3>
+                                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-tight reveal is-visible">
+                <div class="container">
+                    <div class="newsletter">
+                        <div class="row align-items-center g-4">
+                            <div class="col-lg-6">
+                                <h2 class="h2 mb-2">Get 10% off your first order</h2>
+                                <p class="mb-0" style="color: rgba(226, 232, 240, 0.75); max-width: 44ch">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ad earum et
+                                    totam aspernatur quia dignissimos.
+                                </p>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <form class="js-newsletter" novalidate="">
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <label class="visually-hidden" for="ctaEmail">Email address</label>
+                                        <input
+                                            class="form-control flex-grow-1"
+                                            id="ctaEmail"
+                                            type="email"
+                                            name="email"
+                                            placeholder="you@example.com"
+                                            required=""
+                                            style="min-width: 220px; height: 48px"
+                                        />
+                                        <button class="btn btn-brand btn-lg-brand" type="submit">Subscribe</button>
+                                    </div>
+                                    <p class="text-xs mt-2 mb-0" style="color: rgba(226, 232, 240, 0.6)">
+                                        Unsubscribe any time. We never sell your address.
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-4">
+                        <a href="indeh.html" class="brand mb-3">
+                            <span class="brand__mark" aria-hidden="true">
+                                <img src="./assets/images/logo-mark.svg" alt="" width="35" />
+                            </span>
+                            Meridian
+                        </a>
+                        <p class="footer-note mb-4" style="max-width: 34ch">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam distinctio vero eum
+                            vel, quasi odio nesciunt commodi nemo provident!
+                        </p>
+                        <h3>Get 10% off your first order</h3>
+                        <form action="#" method="post" class="js-newsletter">
+                            <div class="d-flex gap-2 flex-wrap" style="max-width: 360px">
+                                <label for="footerEmail" class="visually-hidden"> Email address </label>
+                                <input
+                                    type="email"
+                                    id="footerEmail"
+                                    class="form-control flex-grow-1"
+                                    placeholder="you@example.com"
+                                    style="min-width: 180px"
+                                    required
+                                />
+                                <button type="submit" class="btn btn-brand">Subscribe</button>
+                            </div>
+                            <p class="text-xs mt-2 mb-0" style="color: #94a3b8">One email a week.</p>
+                        </form>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h3>Shop</h3>
+                        <ul class="footer-links">
+                            <li><a href="shop.html">All Products</a></li>
+                            <li><a href="shop.html?sort=newest">New Arrivals</a></li>
+                            <li><a href="shop.html?sale=1">Deals</a></li>
+                            <li><a href="shop.html?category=electronics">Electronics</a></li>
+                            <li><a href="shop.html?category=fashion">Fashion</a></li>
+                            <li><a href="shop.html?category=home">Home</a></li>
+                            <li><a href="shop.html?category=gaming">Gaming</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h3>Company</h3>
+                        <ul class="footer-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about.html#values">Our values</a></li>
+                            <li><a href="about.html#team">Team</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li>
+                                <a href="https://farzadasgari.github.io/lumen/">Admin demo</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h3>Support</h3>
+                        <ul class="footer-links">
+                            <li><a href="faq.html">Help center</a></li>
+                            <li><a href="orders.html">Track an order</a></li>
+                            <li><a href="faq.html#returns">Returns</a></li>
+                            <li><a href="faq.html#shipping">Shipping</a></li>
+                            <li><a href="profile.html">Your account</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h3>Legal</h3>
+                        <ul class="footer-links">
+                            <li><a href="privacy.html">Privacy</a></li>
+                            <li><a href="terms.html">Terms</a></li>
+                            <li><a href="privacy.html#cookies">Cookies</a></li>
+                            <li><a href="terms.html#accessibility">Accessibility</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-3">
+                        <p class="mb-0">
+                            © <span class="js-year">2026</span>
+                            Meridian Retail Ltd.
+                            <a href="https://github.com/farzadasgari">Farzad Asgari</a>
+                        </p>
+
+                        <div class="d-flex align-items-center gap-2" aria-label="Accepted payment methods">
+                            <span class="pay-mark"> VISA </span>
+                            <span class="pay-mark"> Mastercard </span>
+                            <span class="pay-mark"> Amex </span>
+                            <span class="pay-mark"> PayPal </span>
+                            <span class="pay-mark"> Apple Pay </span>
+                        </div>
+
+                        <ul class="social-row list-unstyled mb-0">
+                            <li>
+                                <a
+                                    class="social-link"
+                                    href="https://github.com/farzadasgari"
+                                    aria-label="Farzad on GitHub"
+                                    target="_blank"
+                                >
+                                    <i class="bi bi-github" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="social-link"
+                                    href="https://x.com/farzad_asg"
+                                    aria-label="Farzad on X"
+                                    target="_blank"
+                                >
+                                    <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="social-link"
+                                    href="https://www.linkedin.com/in/farzad-asgari/"
+                                    aria-label="Farzad on LinkedIn"
+                                    target="_blank"
+                                >
+                                    <i class="bi bi-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="social-link"
+                                    href="https://orcid.org/0009-0008-3800-0408"
+                                    aria-label="Farzad on ORCID"
+                                    target="_blank"
+                                >
+                                    <i class="bi bi-person-vcard" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="social-link"
+                                    href="https://scholar.google.com/citations?hl=en&user=Rhue_kkAAAAJ"
+                                    aria-label="Farzad on Google Scholar"
+                                    target="_blank"
+                                >
+                                    <i class="bi bi-google" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="social-link"
+                                    href="https://www.researchgate.net/profile/Farzad-Asgari"
+                                    aria-label="Farzad on ResearchGate"
+                                    target="_blank"
+                                >
+                                    <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </footer>
 
-            <ul class="social-row list-unstyled mb-0">
-              <li>
-                <a
-                  class="social-link"
-                  href="https://github.com/farzadasgari"
-                  aria-label="Farzad on GitHub"
-                  target="_blank"
-                >
-                  <i class="bi bi-github" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="social-link"
-                  href="https://x.com/farzad_asg"
-                  aria-label="Farzad on X"
-                  target="_blank"
-                >
-                  <i class="bi bi-twitter-x" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="social-link"
-                  href="https://www.linkedin.com/in/farzad-asgari/"
-                  aria-label="Farzad on LinkedIn"
-                  target="_blank"
-                >
-                  <i class="bi bi-linkedin" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="social-link"
-                  href="https://orcid.org/0009-0008-3800-0408"
-                  aria-label="Farzad on ORCID"
-                  target="_blank"
-                >
-                  <i class="bi bi-person-vcard" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="social-link"
-                  href="https://scholar.google.com/citations?hl=en&user=Rhue_kkAAAAJ"
-                  aria-label="Farzad on Google Scholar"
-                  target="_blank"
-                >
-                  <i class="bi bi-google" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  class="social-link"
-                  href="https://www.researchgate.net/profile/Farzad-Asgari"
-                  aria-label="Farzad on ResearchGate"
-                  target="_blank"
-                >
-                  <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="miniCart" aria-labelledby="miniCartTitle">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title h5" id="miniCartTitle">Your cart</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close cart"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column">
+                <div id="miniCartBody" class="flex-grow-1"></div>
+                <div id="miniCartFoot" class="mini-cart__foot">
+                    <div class="summary-row mb-2">
+                        <span class="text-muted-2"> Subtotal </span>
+                        <span class="price" id="miniCartSubtotal"> $0.00 </span>
+                    </div>
+                    <p class="text-xs text-muted-2">Shipping and tax are calculated at checkout.</p>
+                    <div class="d-grid gap-2">
+                        <a href="checkout.html" class="btn btn-brand btn-lg-brand">Checkout</a>
+                        <a href="cart.html" class="btn btn-outline-ink">View Cart</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </footer>
 
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="miniCart"
-      aria-labelledby="miniCartTitle"
-    >
-      <div class="offcanvas-header">
-        <h2 class="offcanvas-title h5" id="miniCartTitle">Your cart</h2>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close cart"
-        ></button>
-      </div>
-      <div class="offcanvas-body d-flex flex-column">
-        <div id="miniCartBody" class="flex-grow-1"></div>
-        <div id="miniCartFoot" class="mini-cart__foot">
-          <div class="summary-row mb-2">
-            <span class="text-muted-2"> Subtotal </span>
-            <span class="price" id="miniCartSubtotal"> $0.00 </span>
-          </div>
-          <p class="text-xs text-muted-2">
-            Shipping and tax are calculated at checkout.
-          </p>
-          <div class="d-grid gap-2">
-            <a href="checkout.html" class="btn btn-brand btn-lg-brand"
-              >Checkout</a
-            >
-            <a href="cart.html" class="btn btn-outline-ink">View Cart</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/main.js"></script>
-  </body>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+    </body>
 </html>
