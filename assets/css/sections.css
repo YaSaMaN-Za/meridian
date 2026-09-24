@@ -234,3 +234,56 @@
   font-size: 1.25rem;
   font-weight: 700;
 }
+
+.rail-wrap {
+  position: relative;
+}
+
+.rail {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 3 * var(--gutter)) / 4);
+  gap: var(--gutter);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 0.25rem;
+  scrollbar-width: none;
+}
+
+.rail::-webkit-scrollbar {
+  display: none;
+}
+
+.rail > * {
+  scroll-snap-align: start;
+}
+
+.rail-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.rail-nav__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.rail-nav__btn:hover:not(:disabled) {
+  background: var(--inverse);
+  color: var(--on-inverse);
+  border-color: var(--inverse);
+}
+
+.rail-nav__btn:disabled {
+  opacity: 0.35;
+}
